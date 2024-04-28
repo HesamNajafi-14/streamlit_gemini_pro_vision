@@ -17,7 +17,7 @@ This repository contains a Python script for integrating Gemini AI models into S
 
 1. **Clone this repository**:
     ```bash
-    git clone https://github.com/your_username/your_repository.git
+    git clone https://github.com/HesamNajafi-14/streamlit_gemini_pro_vision.git
     ```
 2. **Install the required dependencies**:
     ```bash

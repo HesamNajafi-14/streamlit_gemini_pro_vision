@@ -7,14 +7,14 @@ import google.generativeai as genai
 def handle_gemini_pro_vision(model, prompt_value=''):
     imageupload = st.file_uploader('Upload your image')
     if imageupload:
-        pr = st.text_input('Write Your Prompt here', value=prompt_value)
+        pr = st.text_input('Write Your Question here', value=prompt_value)
         generate_button = st.button("Generate Content")
         if generate_button:
             img = Image.open(imageupload)
             response = model.generate_content([pr, img])
             st.subheader('Your Image 👇')
             st.image(img)
-            st.subheader('Your Answer to Your Question 👇️')
+            st.subheader('The Answer of Your Question 👇️')
             st.write(response.text)
 
 
